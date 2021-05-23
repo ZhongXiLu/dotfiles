@@ -1,0 +1,39 @@
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ll='exa -lF --color-scale --no-user --no-time --no-permissions --group-directories-first -a'
+alias ls='exa -F --group-directories-first -a'
+alias lf='lf'
+alias tree='tree -C'
+alias cat='bat'
+alias h="hstr"
+
+alias path='echo -e ${PATH//:/\\n}'
+alias mcid='mvn clean install -DskipTests'
+alias mci='mvn clean install'
+alias mid='mvn install -DskipTests'
+alias cdd='cd ~/Desktop/'
+alias 2java8='sdk default java 8.0.282.j9-adpt'
+alias 2java11='sdk default java 11.0.10.j9-adpt'
+alias 2java16='sdk default java 16.0.1.j9-adpt'
+
+alias git-rebase='git rebase -i HEAD~2'
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias aliases="subl $HOME/.config/aliases/.aliases"
+
+alias update='brew update; brew upgrade; brew cleanup'
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+alias reload="source ~/.zshrc"
+alias widgets='cd ~/Library/Application\ Support/Übersicht/widgets'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias localip="ipconfig getifaddr en0"
+
+verify-exe() {
+    xattr -d com.apple.quarantine "$1"
+}
