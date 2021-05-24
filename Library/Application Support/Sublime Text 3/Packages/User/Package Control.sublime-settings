@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"FileManager",
+		"HTML-CSS-JS Prettify",
+		"Package Control",
+		"Pretty JSON",
+		"Seti_UI",
+		"Seti_UX",
+		"TypeScript"
+	]
+}
