@@ -1,6 +1,10 @@
 
-# dotfiles 📝
+# dotfiles
 
-dotfiles managed by [yadm](https://github.com/TheLocehiliosan/yadm).
+![](imgs/screenshot.png)
 
-*WIP* 🚧
+## How to Install
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ZhongXiLu/dotfiles/master/init.sh)"
+```
