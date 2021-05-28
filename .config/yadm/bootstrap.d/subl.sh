@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 SYSTEM_TYPE=$(uname -s)
 DOTS_CONFIG_DIR="$HOME/.config/subl/User"
 MACOS_CONFIG_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"

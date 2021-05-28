@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 SYSTEM_TYPE=$(uname -s)
 DOTS_CONFIG_DIR="$HOME/.config/iterm2"
 
