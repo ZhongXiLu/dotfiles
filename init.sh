@@ -23,4 +23,8 @@ if [ "$SYSTEM_TYPE" = "Darwin" ]; then
     yadm bootstrap
     yadm decrypt
 
+    if git config remote.faraway.url > /dev/null; then
+        yadm remote add origin git@github.com:ZhongXiLu/dotfiles.git
+    fi
+
 fi
