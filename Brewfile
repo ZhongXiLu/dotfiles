@@ -20,6 +20,7 @@ brew "poppler"
 brew "postgresql", restart_service: true
 brew "tree"
 brew "watch"
+brew "wget"
 brew "yadm"
 brew "yarn"
 brew "zsh-autosuggestions"
