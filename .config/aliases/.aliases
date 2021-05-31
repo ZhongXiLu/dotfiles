@@ -7,7 +7,7 @@ alias cdd='cd ~/Desktop/'
 alias ll='exa -lF --color-scale --no-user --no-time --no-permissions --group-directories-first -a'
 alias ls='exa -F --group-directories-first -a'
 alias tree='tree -C'
-alias cat='bat'
+alias cat='bat --paging=never -p'
 alias h="hstr"
 
 alias path='echo -e ${PATH//:/\\n}'
