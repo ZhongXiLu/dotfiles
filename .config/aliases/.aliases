@@ -9,6 +9,7 @@ alias ls='exa -F --group-directories-first -a'
 alias tree='tree -C'
 alias cat='bat --paging=never -p'
 alias h="hstr"
+alias btop="bpytop"
 
 alias path='echo -e ${PATH//:/\\n}'
 alias mcid='mvn clean install -DskipTests'
