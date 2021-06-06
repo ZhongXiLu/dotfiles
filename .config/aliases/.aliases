@@ -29,7 +29,7 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
-alias yadm="yadm --yadm-archive '$HOME/.config/yadm/archive'"
+alias yadm='yadm --yadm-archive "$HOME/.config/yadm/archive"'
 alias reload="source ~/.zshrc"
 alias widgets='cd ~/Library/Application\ Support/Übersicht/widgets'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'

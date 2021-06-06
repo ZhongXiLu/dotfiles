@@ -1,4 +1,4 @@
-sdkman_auto_answer=false
+sdkman_auto_answer=true
 sdkman_auto_selfupdate=false
 sdkman_insecure_ssl=false
 sdkman_curl_connect_timeout=7
@@ -8,4 +8,4 @@ sdkman_debug_mode=false
 sdkman_colour_enable=true
 sdkman_auto_env=false
 sdkman_rosetta2_compatible=true
-sdkman_auto_complete=false
+sdkman_auto_complete=true

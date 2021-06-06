@@ -1,4 +1,9 @@
 
+
+SYSTEM_TYPE=$(uname -s)
+[[ "$SYSTEM_TYPE" = "Darwin" ]] && LOCAL_DIR="/usr/local"
+[[ "$SYSTEM_TYPE" = "Linux" ]] && LOCAL_DIR="/home/linuxbrew/.linuxbrew"
+
 #=====
 # ZSH
 #=====
@@ -14,21 +19,27 @@ plugins=(
     git
 )
 
-source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ -e $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
+[[ -e "$LOCAL_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$LOCAL_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+[[ -e "$LOCAL_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$LOCAL_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
 autoload -Uz compinit
 compinit
 
 #========
 # iTerm2
 #========
-test -e "${HOME}/.config/iterm2/.iterm2_shell_integration.zsh" && source "${HOME}/.config/iterm2/.iterm2_shell_integration.zsh"
+[[ -e "$HOME/.config/iterm2/.iterm2_shell_integration.zsh" ]] && source "$HOME/.config/iterm2/.iterm2_shell_integration.zsh"
+
+#==================
+# Homebrew (Linux)
+#==================
+[[ -d "/home/linuxbrew" ]] && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #====
 # Z
 #====
-. /usr/local/etc/profile.d/z.sh
+[[ -e "$LOCAL_DIR/etc/profile.d/z.sh" ]] && . "$LOCAL_DIR/etc/profile.d/z.sh"
 
 #=========
 # Aliases

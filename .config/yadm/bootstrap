@@ -9,6 +9,11 @@ set -eu
 # Install Homebrew and packages first
 source "$HOME/.config/yadm/brew.sh"
 
+# Switch to zsh
+if [[ "$SHELL" != *"zsh" ]]; then
+    chsh -s $(which zsh)
+fi
+
 # Directory to look for bootstrap executables in
 BOOTSTRAP_D="${BASH_SOURCE[0]}.d"
 
