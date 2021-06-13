@@ -1,7 +1,7 @@
 {
 	"caret_extra_width": 2,
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": false,
@@ -12,15 +12,7 @@
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"scroll_past_end": false,
-	"theme": "Seti.sublime-theme",
+	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true,
-		
-	"Seti_SB_med": true,
-	"Seti_seablue_scrollbar": true,
-	"Seti_bold_slctdfile_labels": true,
-	"Seti_sidebar_font_size_13": true,
-	"Seti_ClosedFolder_anim": true,
-	"Seti_no_heading":true,
-	"Seti_alt_tree_row":true,
 }

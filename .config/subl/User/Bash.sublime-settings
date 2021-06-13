@@ -3,6 +3,7 @@
 	[
 		".aliases",
 		".bosa_aliases",
-		"zsh-theme"
-	]
+		"zsh-theme",
+		"conf",
+	],
 }
