@@ -1,0 +1,26 @@
+
+# Focus space
+hyper - 1 : yabai -m space --focus 1
+hyper - 2 : yabai -m space --focus 2
+hyper - 3 : yabai -m space --focus 3
+hyper - 4 : yabai -m space --focus 4
+hyper - 5 : yabai -m space --focus 5
+
+# Focus monitor
+hyper - 0x1E : yabai -m display --focus 1   # ]
+hyper - 0x21 : yabai -m display --focus 2   # [
+
+# Focus window
+hyper - h : yabai -m window --focus west
+hyper - j : yabai -m window --focus south
+hyper - k : yabai -m window --focus north
+hyper - l : yabai -m window --focus east
+
+# Close current window
+hyper - w : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+
+# Open application
+hyper - t : open /Applications/iTerm.app
+hyper - c : open /Applications/Google\ Chrome.app
+hyper - i : open /Applications/IntelliJ\ IDEA.app
+hyper - e : open /Applications/Sublime\ Text.app
