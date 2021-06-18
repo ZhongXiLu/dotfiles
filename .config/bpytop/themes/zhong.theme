@@ -17,16 +17,16 @@ theme[main_fg]="#FFFBF6"
 theme[title]="#FFFBF6"
 
 # Higlight color for keyboard shortcuts
-theme[hi_fg]="#2eb398"
+theme[hi_fg]="#2EB398"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#0d493d"
+theme[selected_bg]="#5CCC96"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#B8E36E"
+theme[selected_fg]="#5CCC96"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#1D191B"
+theme[inactive_fg]="#0F111B"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
 theme[graph_text]="#797667"
@@ -50,41 +50,41 @@ theme[proc_box]="#565656"
 theme[div_line]="#595647"
 
 # Temperature graph colors
-theme[temp_start]="#B8E36E"
-theme[temp_mid]="#FFD852"
-theme[temp_end]="#FF4250"
+theme[temp_start]="#5CCC96"
+theme[temp_mid]="#E39400"
+theme[temp_end]="#E33400"
 
 # CPU graph colors
-theme[cpu_start]="#B8E36E"
-theme[cpu_mid]="#FFD852"
-theme[cpu_end]="#FF4250"
+theme[cpu_start]="#5CCC96"
+theme[cpu_mid]="#E39400"
+theme[cpu_end]="#E33400"
 
 # Mem/Disk free meter
-theme[free_start]="#B8E36E"
-theme[free_mid]="#FFD852"
-theme[free_end]="#FF4250"
+theme[free_start]="#5CCC96"
+theme[free_mid]="#E39400"
+theme[free_end]="#E33400"
 
 # Mem/Disk cached meter
-theme[cached_start]="#B8E36E"
-theme[cached_mid]="#FFD852"
-theme[cached_end]="#FF4250"
+theme[cached_start]="#5CCC96"
+theme[cached_mid]="#E39400"
+theme[cached_end]="#E33400"
 
 # Mem/Disk available meter
-theme[available_start]="#B8E36E"
-theme[available_mid]="#FFD852"
-theme[available_end]="#FF4250"
+theme[available_start]="#5CCC96"
+theme[available_mid]="#E39400"
+theme[available_end]="#E33400"
 
 # Mem/Disk used meter
-theme[used_start]="#B8E36E"
-theme[used_mid]="#FFD852"
-theme[used_end]="#FF4250"
+theme[used_start]="#5CCC96"
+theme[used_mid]="#E39400"
+theme[used_end]="#E33400"
 
 # Download graph colors
-theme[download_start]="#B8E36E"
-theme[download_mid]="#FFD852"
-theme[download_end]="#FF4250"
+theme[download_start]="#5CCC96"
+theme[download_mid]="#E39400"
+theme[download_end]="#E33400"
 
 # Upload graph colors
-theme[upload_start]="#B8E36E"
-theme[upload_mid]="#FFD852"
-theme[upload_end]="#FF4250"
+theme[upload_start]="#5CCC96"
+theme[upload_mid]="#E39400"
+theme[upload_end]="#E33400"

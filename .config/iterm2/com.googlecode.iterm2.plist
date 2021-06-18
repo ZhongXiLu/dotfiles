@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>BadgeRightMargin</key>
 	<integer>10</integer>
 	<key>BadgeTopMargin</key>
@@ -1581,6 +1583,8 @@ Marks and Annotations.Next Mark</string>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1598,6 +1602,8 @@ Marks and Annotations.Next Mark</string>
 			<string></string>
 			<key>AWDS Window Option</key>
 			<string>No</string>
+			<key>Allow Title Setting</key>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1908,6 +1914,8 @@ Marks and Annotations.Next Mark</string>
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Advanced</string>
+			<key>Custom Window Title</key>
+			<string></string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1921,13 +1929,13 @@ Marks and Annotations.Next Mark</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.75686275959014893</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.94117647409439087</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.92549020051956177</real>
+				<real>0.99999600649999998</real>
 			</dict>
 			<key>Guid</key>
 			<string>3119A555-11B6-4E2E-9941-36BFADEDAF90</string>
@@ -2212,6 +2220,8 @@ Marks and Annotations.Next Mark</string>
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Custom Window Title</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -2284,9 +2294,9 @@ Marks and Annotations.Next Mark</string>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SwitchPaneModifier</key>
-	<integer>4</integer>
-	<key>SwitchTabModifier</key>
 	<integer>9</integer>
+	<key>SwitchTabModifier</key>
+	<integer>4</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TabViewType</key>
@@ -2300,7 +2310,7 @@ Marks and Annotations.Next Mark</string>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>

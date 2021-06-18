@@ -2,6 +2,7 @@
 	"caret_extra_width": 2,
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
+	"font_face": "JetBrainsMono-Regular",
 	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": false,

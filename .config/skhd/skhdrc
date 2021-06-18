@@ -1,14 +1,14 @@
 
 # Focus space
-hyper - 1 : yabai -m space --focus 1
-hyper - 2 : yabai -m space --focus 2
-hyper - 3 : yabai -m space --focus 3
-hyper - 4 : yabai -m space --focus 4
-hyper - 5 : yabai -m space --focus 5
+hyper - 1 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 1
+hyper - 2 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 2
+hyper - 3 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 3
+hyper - 4 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 4
+hyper - 5 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 5
+hyper - 6 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 6
 
-# Focus monitor
-hyper - 0x1E : yabai -m display --focus 1   # ]
-hyper - 0x21 : yabai -m display --focus 2   # [
+# Focus monitor (toggle)
+hyper - g : yabai -m display --focus recent
 
 # Focus window
 hyper - h : yabai -m window --focus west
@@ -16,11 +16,20 @@ hyper - j : yabai -m window --focus south
 hyper - k : yabai -m window --focus north
 hyper - l : yabai -m window --focus east
 
+# Move window
+hyper - e : yabai -m window --display 1; yabai -m display --focus 1
+hyper - d : yabai -m window --display 2; yabai -m display --focus 2
+hyper - f : yabai -m window --space next; yabai -m space --focus next
+hyper - s : yabai -m window --space prev; yabai -m space --focus prev
+
 # Close current window
 hyper - w : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
+# Rotate tree
+hyper - r : yabai -m space --rotate 90
+
 # Open application
-hyper - t : open /Applications/iTerm.app
-hyper - c : open /Applications/Google\ Chrome.app
-hyper - i : open /Applications/IntelliJ\ IDEA.app
-hyper - e : open /Applications/Sublime\ Text.app
+hyper - t : open -a iTerm
+hyper - c : open -a Google\ Chrome
+hyper - i : open -a IntelliJ\ IDEA
+hyper - n : open -a Sublime\ Text
