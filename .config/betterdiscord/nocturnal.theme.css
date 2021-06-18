@@ -13,14 +13,14 @@
 @import url("https://codedotspectra.github.io/themes/core/hljs.css"); /* Better Hljs */
 @import url("https://discordstyles.github.io/RadialStatus/base.css"); /* Radial Status */
 :root {
-  --backgroundColor01: #2E2E2E;
-  --backgroundColor02: #161315;
-  --mainColor: #00A2FA;
-  --gradientColor01: #8CE10B;
-  --gradientColor02: #00D8EB;
+  --backgroundColor01: #1b1c36;
+  --backgroundColor02: #0f111b;
+  --mainColor: #5ccc96;
+  --gradientColor01: #5ccc96;
+  --gradientColor02: #00a3cc;
 
   /* Better Hljs */
-  --backgroundCode: #2E2E2E;
+  --backgroundCode: #1b1c36;
   --backgroundName: rgba(0, 0, 0, .2);
 
   /* Radial Status */
@@ -28,12 +28,12 @@
   --rs-large-spacing: 3px;
   --rs-width: 2px;
   --rs-avatar-shape: 50%;
-  --rs-online-color: #8CE10B;
-  --rs-idle-color: #FFB900;
-  --rs-dnd-color: #FF000F;
-  --rs-offline-color: #444444;
-  --rs-streaming-color: #6D43A6;
-  --rs-invisible-color: #444444;
+  --rs-online-color: #5ccc96;
+  --rs-idle-color: #f2ce00;
+  --rs-dnd-color: #e33400;
+  --rs-offline-color: #818596;
+  --rs-streaming-color: #b3a1e6;
+  --rs-invisible-color: #818596;
   --rs-phone-visible: block;
   --rs-phone-color: var(--rs-online-color);
 }
