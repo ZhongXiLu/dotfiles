@@ -16,6 +16,9 @@ hyper - j : yabai -m window --focus south
 hyper - k : yabai -m window --focus north
 hyper - l : yabai -m window --focus east
 
+# Fill space with window
+hyper - 0 : yabai -m window --grid 1:1:0:0:1:1
+
 # Move window
 hyper - e : yabai -m window --display 1; yabai -m display --focus 1
 hyper - d : yabai -m window --display 2; yabai -m display --focus 2
@@ -30,6 +33,6 @@ hyper - r : yabai -m space --rotate 90
 
 # Open application
 hyper - t : open -a iTerm
-hyper - c : open -a Google\ Chrome
+hyper - c : open -na Google\ Chrome
 hyper - i : open -a IntelliJ\ IDEA
 hyper - n : open -a Sublime\ Text

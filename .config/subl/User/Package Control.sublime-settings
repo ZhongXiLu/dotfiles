@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"ayu",
+		"Color Highlight",
 		"FileManager",
 		"HTML-CSS-JS Prettify",
 		"Package Control",

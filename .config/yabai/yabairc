@@ -23,11 +23,11 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  06
-yabai -m config bottom_padding               06
-yabai -m config left_padding                 06
-yabai -m config right_padding                06
-yabai -m config window_gap                   03
+yabai -m config top_padding                  00
+yabai -m config bottom_padding               00
+yabai -m config left_padding                 00
+yabai -m config right_padding                00
+yabai -m config window_gap                   00
 
 # ignore apps
 # yabai -m rule --add app="System Preferences" manage=off
@@ -38,3 +38,6 @@ yabai -m config window_gap                   03
 # yabai -m rule --add app="Google Chrome" manage=off
 # yabai -m rule --add app="IntelliJ IDEA" manage=off # TODO: fix this
 yabai -m rule --add app=".*" manage=off
+
+# Status bar (simple-bar)
+yabai -m config external_bar all:28:0
