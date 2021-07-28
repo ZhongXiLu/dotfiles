@@ -3,6 +3,7 @@
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"font_face": "JetBrainsMono-Regular",
+	"font_options": ["no_liga", "no_clig", "no_calt"],
 	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": false,
