@@ -1,7 +1,9 @@
 
 # dotfiles
 
-<img width="1440" alt="Screen Shot 2021-06-18 at 16 42 35" src="https://user-images.githubusercontent.com/25816683/122578603-52357f00-d054-11eb-9ede-008cb02f8ccb.png">
+<p align="center">
+  <img width="720" alt="Rice" src="https://user-images.githubusercontent.com/25816683/127311499-a03f827a-522d-4164-bb85-3c3503fd8433.png">
+</p>
 
 ## How to Install
 
