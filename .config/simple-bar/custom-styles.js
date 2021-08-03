@@ -9,4 +9,11 @@ export const customStyles = /* css */ `
 .space {
     margin: 0px 2px;
 }
+.space__inner {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
 `
