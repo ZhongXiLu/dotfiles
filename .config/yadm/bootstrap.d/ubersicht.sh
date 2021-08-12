@@ -22,4 +22,7 @@ if [ "$SYSTEM_TYPE" = "Darwin" ]; then
     ln "$HOME/.config/simple-bar/spaceduck.js" "$SPACEDUCK_THEME_FILE"
 
     echo "simple-bar ✅"
+
+    osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Übersicht.app", hidden:false}'
+    echo "Übersicht ✅"
 fi
