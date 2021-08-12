@@ -3,6 +3,7 @@
 set -eu
 
 SYSTEM_TYPE=$(uname -s)
+USER=$(id -un)
 
 if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
 
@@ -31,7 +32,10 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     fi
 
     yadm bootstrap
-    yadm decrypt --yadm-archive "$HOME/.config/yadm/archive"
+
+    if [ $USER == "zhongxilu" ]; then
+        yadm decrypt --yadm-archive "$HOME/.config/yadm/archive"
+    fi
 
     if git config remote.faraway.url > /dev/null; then
         yadm remote add origin https://github.com/ZhongXiLu/dotfiles.git
