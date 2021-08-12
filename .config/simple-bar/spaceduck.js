@@ -1,4 +1,4 @@
-export const SpaceDuck = {
+export const theme = {
   name: 'SpaceDuck',
   kind: 'dark',
   main: '#0f111b',

@@ -1,7 +1,7 @@
-export const customStyles = /* css */ `
+export const styles = /* css */ `
 
 .data-widget, .space__label {
-    font-size: 13px;
+    font-size: 14px;
 }
 .data-widget {
     margin: 0px 4px;
@@ -16,4 +16,5 @@ export const customStyles = /* css */ `
     -ms-transition: none !important;
     transition: none !important;
 }
+
 `
