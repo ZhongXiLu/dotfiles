@@ -21,6 +21,9 @@ if [ "$SYSTEM_TYPE" = "Darwin" ]; then
     [[ -L "$SPACEDUCK_THEME_FILE" || -f "$SPACEDUCK_THEME_FILE" ]] && rm "$SPACEDUCK_THEME_FILE"
     ln "$HOME/.config/simple-bar/spaceduck.js" "$SPACEDUCK_THEME_FILE"
 
+    # Hide default macOS menu bar
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist _HIHideMenuBar -bool true
+
     echo "simple-bar ✅"
 
     osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Übersicht.app", hidden:false}'

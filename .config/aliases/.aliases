@@ -10,6 +10,7 @@ alias tree='tree -C'
 alias cat='bat --paging=never -p'
 alias h="hstr"
 alias btop="bpytop"
+alias diff=colordiff
 
 alias path='echo -e ${PATH//:/\\n}'
 alias mcid='mvn clean install -DskipTests'
@@ -20,6 +21,7 @@ alias git-rebase='git rebase -i HEAD~2'
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias aliases="subl $HOME/.config/aliases/.aliases"
+alias plist='plutil -convert xml1 -o /dev/stdout'
 
 alias update='brew update; brew upgrade; brew cleanup'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
