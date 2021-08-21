@@ -25,7 +25,13 @@ fi
 find "$BOOTSTRAP_D" -type f | sort | while IFS= read -r bootstrap; do
     if [[ -x "$bootstrap" && ! "$bootstrap" =~ "##" && ! "$bootstrap" =~ "~$" ]]; then
         if ! "$bootstrap"; then
-            echo "Error: bootstrap '$bootstrap' failed" >&2
+            BOOTSTRAP_FILENAME=$(basename -- $bootstrap)
+            echo -e "\033[0;31m\nFailed installing '${BOOTSTRAP_FILENAME%%.*}'...\033[0m" >&2
+            echo -e "\033[0;31mYou can try one of the following:\033[0m" >&2
+            echo -e "\033[0;31m\t(1) Check the output above to see what went wrong and try to manually fix it\033[0m" >&2
+            echo -e "\033[0;31m\t(2) Open the bootstrap script and manually run each command: '$HOME/.config/yadm/bootstrap.d/$BOOTSTRAP_FILENAME'\033[0m" >&2
+            echo -e "\033[0;31m\t(3) Skip the installation of '${BOOTSTRAP_FILENAME%%.*}' by removing its bootstrap script: 'rm $HOME/.config/yadm/bootstrap.d/$BOOTSTRAP_FILENAME'\033[0m" >&2
+            echo -e "\033[0;31m\t(4) If nothing is working, you can always open a new issue in my dotfiles repo: 'https://github.com/ZhongXiLu/dotfiles/issues/new'\033[0m" >&2
             exit 1
         fi
     fi
