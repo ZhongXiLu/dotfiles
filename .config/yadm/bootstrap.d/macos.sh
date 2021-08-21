@@ -219,10 +219,6 @@ if [ "$SYSTEM_TYPE" = "Darwin" ]; then
     # Remove the animation when hiding/showing the Dock
     defaults write com.apple.dock autohide-time-modifier -float 0
 
-    # Automatically hide and show the Dock
-    # TODO: maybe change this
-    # defaults write com.apple.dock autohide -bool true
-
     #======
     # Mail
     #======
@@ -340,6 +336,78 @@ if [ "$SYSTEM_TYPE" = "Darwin" ]; then
     # Prevent Photos from opening automatically when devices are plugged in
     defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+    #===================
+    # Custom preferences
+    #===================
+
+    # General
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleWindowTabbingMode" "always"
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "NSAutomaticTextCompletionEnabled" "NSCloseAlwaysConfirmsChanges"
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleScrollerPagingBehavior" -bool false
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleInterfaceStyle" "Dark"
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "NSTableViewDefaultSizeMode" -int "2"
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleReduceDesktopTinting" -bool false
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "NSQuitAlwaysKeepsWindows" -bool false
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleShowScrollBars" "Automatic"
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "NSCloseAlwaysConfirmsChanges" -bool false
+
+    # Dock
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleActionOnDoubleClick" "Minimize"
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "show-recents" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "autohide" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "tilesize" -int "48"
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "largesize" -int "128"
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "launchanim" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "orientation" "right"
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "minimize-to-application" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "mineffect" "genie"
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "show-process-indicators" -bool true
+
+    # Menubar
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible Battery" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.speech.synthesis.general.prefs.plist "TimeAnnouncementsEnabled" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible WiFi" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.airplay.plist "showInMenuBarIfPresent" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.menuextra.clock.plist "Show24Hour" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.menuextra.clock.plist "ShowDayOfMonth" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.menuextra.clock.plist "ShowSeconds" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.systemuiserver.plist "NSStatusItem Visible Siri" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.systemuiserver.plist "NSStatusItem Visible Item-0" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible AirDrop" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible KeyboardBrightness" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible Item-8" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible UserSwitcher" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible Item-7" "NSStatusItem Visible Item-8"
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible Bluetooth" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.controlcenter.plist "NSStatusItem Visible AccessibilityShortcuts" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.menuextra.clock.plist "FlashDateSeparators" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.menuextra.clock.plist "DateFormat" "EEE d MMM  HH:mm:ss"
+    defaults write $HOME/Library/Preferences/com.apple.menuextra.clock.plist "ShowDayOfWeek" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.menuextra.clock.plist "IsAnalog" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.Siri.plist "StatusMenuVisible" -bool false
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "_HIHideMenuBar" -bool true
+
+    # Mission control
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleShowScrollBars" "AppleSpacesSwitchOnActivate"
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleSpacesSwitchOnActivate" -bool true
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "expose-group-apps" -bool false
+    defaults write $HOME/Library/Preferences/com.apple.dock.plist "mru-spaces" -bool false
+
+    # Language
+    defaults write $HOME/Library/Preferences/.GlobalPreferences_m.plist "AppleLocale" "en_BE"
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "AppleTemperatureUnit" "Celsius"
+
+    # Trackpad
+    defaults write $HOME/Library/Preferences/.GlobalPreferences.plist "com.apple.swipescrolldirection" -bool false
+
+    # OneDrive
+    defaults write $HOME/Library/Preferences/com.microsoft.OneDrive.plist "OpenAtLogin" -int "1"
+    defaults write $HOME/Library/Preferences/com.microsoft.OneDrive.plist "HideDockIcon" -bool true
+
+    # Login items
+    osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Maccy.app", hidden:true}'
+    osascript -e 'tell application "System Events" to make login item at end with properties {path:"/System/Applications/Mail.app", hidden:true}'
+
     #============================
     # Kill affected applications
     #============================
@@ -352,7 +420,9 @@ if [ "$SYSTEM_TYPE" = "Darwin" ]; then
         "Dock" \
         "Finder" \
         "Google Chrome" \
+        "Maccy" \
         "Mail" \
+        "OneDrive" \
         "Photos" \
         "SystemUIServer" \
         "Terminal" \

@@ -1577,6 +1577,8 @@ Marks and Annotations.Next Mark</string>
 	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideActivityIndicator</key>
+	<false/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
@@ -2289,6 +2291,8 @@ Marks and Annotations.Next Mark</string>
 	<true/>
 	<key>ShowMetalFPSmeter</key>
 	<false/>
+	<key>ShowNewOutputIndicator</key>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SoundForEsc</key>
