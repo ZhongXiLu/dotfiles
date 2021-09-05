@@ -2,3 +2,5 @@ set hidden on
 set promptfmt "\033[32;1m%d\033[0m\033[1m%f\033[0m"
 set previewer ~/.config/lf/pv.sh
 map i $LESSOPEN='| ~/.config/lf/pv.sh %s' less -R $f
+cmd yank-path $printf '%s' "$fx" | pbcopy
+map <c-c> yank-path
