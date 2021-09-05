@@ -1870,7 +1870,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>100</integer>
+			<integer>130</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -2169,7 +2169,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>26</integer>
+			<integer>36</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>

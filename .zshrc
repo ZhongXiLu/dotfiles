@@ -58,6 +58,11 @@ export GOROOT="$(brew --prefix go)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export GPG_TTY=$(tty)
 
+#===================
+# Bonsai on startup
+#===================
+cbonsai -p -L 42
+
 #=========
 # SDKMAN!
 #=========
