@@ -1,0 +1,107 @@
+{
+    "global": {
+        "theme": "dark",
+        "floatingBar": false,
+        "noBarBg": false,
+        "noColorInData": true,
+        "bottomBar": false,
+        "inlineSpacesOptions": false,
+        "disableNotifications": true,
+        "backgroundColorAsForeground": false,
+        "font": "JetBrains Mono",
+        "fontSize": "14px",
+        "yabaiPath": "/usr/local/bin/yabai",
+        "shell": "dash",
+        "slidingAnimationPace": "1000",
+        "externalConfigFile": true
+    },
+    "themes": {
+        "lightTheme": "NightShiftLight",
+        "darkTheme": "SpaceDuck"
+    },
+    "process": {
+        "displayOnlyCurrent": true,
+        "showCurrentSpaceMode": false
+    },
+    "spacesDisplay": {
+        "exclusions": "Microsoft Teams",
+        "titleExclusions": "",
+        "exclusionsAsRegex": false,
+        "displayAllSpacesOnAllScreens": false,
+        "hideDuplicateAppsInSpaces": false,
+        "displayStickyWindowsSeparately": false,
+        "hideEmptySpaces": false,
+        "showOptionsOnHover": true,
+        "hideSpacesOptions": false
+    },
+    "widgets": {
+        "processWidget": false,
+        "weatherWidget": true,
+        "batteryWidget": true,
+        "wifiWidget": false,
+        "vpnWidget": false,
+        "zoomWidget": false,
+        "soundWidget": false,
+        "micWidget": false,
+        "dateWidget": true,
+        "timeWidget": true,
+        "keyboardWidget": false,
+        "spotifyWidget": false,
+        "musicWidget": false,
+        "mpdWidget": false,
+        "browserTrackWidget": false
+    },
+    "weatherWidgetOptions": {
+        "unit": "C",
+        "hideLocation": true,
+        "hideGradient": false,
+        "customLocation": ""
+    },
+    "zoomWidgetOptions": {
+        "showVideo": true,
+        "showMic": true
+    },
+    "batteryWidgetOptions": {
+        "toggleCaffeinateOnClick": true,
+        "caffeinateOption": ""
+    },
+    "networkWidgetOptions": {
+        "networkDevice": "en0",
+        "toggleWifiOnClick": false
+    },
+    "vpnWidgetOptions": {
+        "vpnConnectionName": "",
+        "vpnShowConnectionName": false
+    },
+    "timeWidgetOptions": {
+        "hour12": false,
+        "dayProgress": true,
+        "showSeconds": true
+    },
+    "dateWidgetOptions": {
+        "shortDateFormat": true,
+        "locale": "en-UK",
+        "calendarApp": ""
+    },
+    "spotifyWidgetOptions": {
+        "showSpecter": true
+    },
+    "musicWidgetOptions": {
+        "showSpecter": true
+    },
+    "mpdWidgetOptions": {
+        "showSpecter": true,
+        "mpdPort": "6600",
+        "mpdHost": "127.0.0.1",
+        "mpdFormatString": "%title%[ - %artist%]|[%file%]"
+    },
+    "browserTrackWidgetOptions": {
+        "showSpecter": true
+    },
+    "userWidgets": {
+        "userWidgetsList": {}
+    },
+    "customStyles": {
+        "styles": "\n    .data-widget, .space__label {\n        font-size: 14px;\n    }\n    .data-widget {\n        margin: 0px 4px;\n    }\n    .space {\n        margin: 0px 2px;\n    }\n    .space__inner {\n        -webkit-transition: none !important;\n        -moz-transition: none !important;\n        -o-transition: none !important;\n        -ms-transition: none !important;\n        transition: none !important;\n    }\n    "
+    }
+}
