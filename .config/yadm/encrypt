@@ -1,2 +1,5 @@
 .config/aliases/.bosa_aliases
 .m2/settings.xml
+.ssh/id_*
+.ssh/known_hosts
+.gitconfig
