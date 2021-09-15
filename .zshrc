@@ -61,7 +61,9 @@ export GPG_TTY=$(tty)
 #===================
 # Bonsai on startup
 #===================
-cbonsai -p -L 42
+if [[ $__CFBundleIdentifier != "com.jetbrains.intellij" ]]; then
+    cbonsai -p -L 42
+fi
 
 #=========
 # SDKMAN!
