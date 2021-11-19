@@ -1870,7 +1870,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>130</integer>
+			<integer>140</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -1943,6 +1943,8 @@ Marks and Annotations.Next Mark</string>
 			<string>3119A555-11B6-4E2E-9941-36BFADEDAF90</string>
 			<key>Horizontal Spacing</key>
 			<real>1.04</real>
+			<key>Icon</key>
+			<integer>0</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
