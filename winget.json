@@ -1,0 +1,98 @@
+{
+    "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+    "CreationDate": "2021-12-15T21:01:31.134-00:00",
+    "Sources":
+    [
+        {
+            "Packages":
+            [
+                {
+                    "PackageIdentifier": "7zip.7zip"
+                },
+                {
+                    "PackageIdentifier": "ShareX.ShareX"
+                },
+                {
+                    "PackageIdentifier": "Audacity.Audacity"
+                },
+                {
+                    "PackageIdentifier": "Lexikos.AutoHotkey"
+                },
+                {
+                    "PackageIdentifier": "Discord.Discord"
+                },
+                {
+                    "PackageIdentifier": "Git.Git"
+                },
+                {
+                    "PackageIdentifier": "Google.Chrome"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Office"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.OneDrive"
+                },
+                {
+                    "PackageIdentifier": "Postman.Postman"
+                },
+                {
+                    "PackageIdentifier": "Spotify.Spotify"
+                },
+                {
+                    "PackageIdentifier": "Valve.Steam"
+                },
+                {
+                    "PackageIdentifier": "EpicGames.EpicGamesLauncher"
+                },
+                {
+                    "PackageIdentifier": "ElectronicArts.Origin"
+                },
+                {
+                    "PackageIdentifier": "SteelSeries.GG"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Teams"
+                },
+                {
+                    "PackageIdentifier": "VideoLAN.VLC"
+                },
+                {
+                    "PackageIdentifier": "NZXT.CAM"
+                },
+                {
+                    "PackageIdentifier": "SlackTechnologies.Slack"
+                },
+                {
+                    "PackageIdentifier": "Oracle.VirtualBox"
+                },
+                {
+                    "PackageIdentifier": "Typora.Typora"
+                },
+                {
+                    "PackageIdentifier": "SublimeHQ.SublimeText"
+                },
+                {
+                    "PackageIdentifier": "Peppy.Osu!"
+                },
+                {
+                    "PackageIdentifier": "EpicGames.EpicGamesLauncher"
+                },
+                {
+                    "PackageIdentifier": "Adobe.Acrobat.Reader.32-bit"
+                },
+                {
+                    "PackageIdentifier": "Blizzard.BattleNet"
+                }
+            ],
+            "SourceDetails":
+            {
+                "Argument": "https://winget.azureedge.net/cache",
+                "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                "Name": "winget",
+                "Type": "Microsoft.PreIndexed.Package"
+            }
+        }
+    ],
+    "WinGetVersion": "1.1.13405"
+}
