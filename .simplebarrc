@@ -1,29 +1,37 @@
 {
-    "global": {
+    "global":
+    {
         "theme": "dark",
         "floatingBar": false,
         "noBarBg": false,
         "noColorInData": true,
         "bottomBar": false,
         "inlineSpacesOptions": false,
-        "disableNotifications": true,
-        "backgroundColorAsForeground": false,
+        "disableNotifications": false,
+        "compactMode": true,
+        "widgetMaxWidth": "320px",
+        "spacesBackgroundColorAsForeground": false,
+        "widgetsBackgroundColorAsForeground": false,
         "font": "JetBrains Mono",
         "fontSize": "14px",
         "yabaiPath": "/usr/local/bin/yabai",
         "shell": "dash",
         "slidingAnimationPace": "1000",
-        "externalConfigFile": true
+        "externalConfigFile": true,
+        "backgroundColorAsForeground": false
     },
-    "themes": {
+    "themes":
+    {
         "lightTheme": "NightShiftLight",
         "darkTheme": "SpaceDuck"
     },
-    "process": {
+    "process":
+    {
         "displayOnlyCurrent": true,
         "showCurrentSpaceMode": false
     },
-    "spacesDisplay": {
+    "spacesDisplay":
+    {
         "exclusions": "Microsoft Teams",
         "titleExclusions": "",
         "exclusionsAsRegex": false,
@@ -32,9 +40,11 @@
         "displayStickyWindowsSeparately": false,
         "hideEmptySpaces": false,
         "showOptionsOnHover": true,
+        "switchSpacesWithoutYabai": false,
         "hideSpacesOptions": false
     },
-    "widgets": {
+    "widgets":
+    {
         "processWidget": false,
         "weatherWidget": true,
         "batteryWidget": true,
@@ -47,61 +57,125 @@
         "timeWidget": true,
         "keyboardWidget": false,
         "spotifyWidget": false,
+        "cryptoWidget": false,
+        "stockWidget": true,
         "musicWidget": false,
         "mpdWidget": false,
+        "dndWidget": false,
         "browserTrackWidget": false
     },
-    "weatherWidgetOptions": {
+    "weatherWidgetOptions":
+    {
+        "refreshFrequency": 1800000,
         "unit": "C",
         "hideLocation": true,
         "hideGradient": false,
         "customLocation": ""
     },
-    "zoomWidgetOptions": {
-        "showVideo": true,
-        "showMic": true
-    },
-    "batteryWidgetOptions": {
+    "batteryWidgetOptions":
+    {
+        "refreshFrequency": 10000,
         "toggleCaffeinateOnClick": true,
         "caffeinateOption": ""
     },
-    "networkWidgetOptions": {
+    "networkWidgetOptions":
+    {
+        "refreshFrequency": 20000,
         "networkDevice": "en0",
         "toggleWifiOnClick": false
     },
-    "vpnWidgetOptions": {
+    "vpnWidgetOptions":
+    {
+        "refreshFrequency": 8000,
         "vpnConnectionName": "",
         "vpnShowConnectionName": false
     },
-    "timeWidgetOptions": {
-        "hour12": false,
-        "dayProgress": true,
-        "showSeconds": true
+    "zoomWidgetOptions":
+    {
+        "refreshFrequency": 5000,
+        "showVideo": true,
+        "showMic": true
     },
-    "dateWidgetOptions": {
+    "soundWidgetOptions":
+    {
+        "refreshFrequency": 20000
+    },
+    "micWidgetOptions":
+    {
+        "refreshFrequency": 20000
+    },
+    "dateWidgetOptions":
+    {
+        "refreshFrequency": 30000,
         "shortDateFormat": true,
         "locale": "en-UK",
         "calendarApp": ""
     },
-    "spotifyWidgetOptions": {
+    "timeWidgetOptions":
+    {
+        "refreshFrequency": 1000,
+        "hour12": false,
+        "dayProgress": true,
+        "showSeconds": true
+    },
+    "keyboardWidgetOptions":
+    {
+        "refreshFrequency": 20000
+    },
+    "cryptoWidgetOptions":
+    {
+        "refreshFrequency": 300000,
+        "denomination": "usd",
+        "identifiers": "bitcoin,ethereum,celo",
+        "precision": 5
+    },
+    "stockWidgetOptions":
+    {
+        "refreshFrequency": "900000",
+        "yahooFinanceApiKey": "",
+        "symbols": "vwce.de",
+        "showSymbol": false,
+        "showCurrency": true,
+        "showMarketPrice": true,
+        "showMarketChange": true,
+        "showMarketPercent": false,
+        "showColor": true
+    },
+    "spotifyWidgetOptions":
+    {
+        "refreshFrequency": 10000,
         "showSpecter": true
     },
-    "musicWidgetOptions": {
+    "musicWidgetOptions":
+    {
+        "refreshFrequency": 10000,
         "showSpecter": true
     },
-    "mpdWidgetOptions": {
+    "mpdWidgetOptions":
+    {
+        "refreshFrequency": 10000,
         "showSpecter": true,
         "mpdPort": "6600",
         "mpdHost": "127.0.0.1",
         "mpdFormatString": "%title%[ - %artist%]|[%file%]"
     },
-    "browserTrackWidgetOptions": {
+    "dndWidgetOptions":
+    {
+        "refreshFrequency": 60000,
+        "showDndLabel": false
+    },
+    "browserTrackWidgetOptions":
+    {
+        "refreshFrequency": 10000,
         "showSpecter": true
     },
-    "userWidgets": {
-        "userWidgetsList": {}
+    "userWidgets":
+    {
+        "userWidgetsList":
+        {}
     },
-    "customStyles": {
+    "customStyles":
+    {
         "styles": "\n    .data-widget, .space__label {\n        font-size: 14px;\n    }\n    .data-widget {\n        margin: 0px 4px;\n    }\n    .space {\n        margin: 0px 2px;\n    }\n    .space__inner {\n        -webkit-transition: none !important;\n        -moz-transition: none !important;\n        -o-transition: none !important;\n        -ms-transition: none !important;\n        transition: none !important;\n    }\n    "
     }
 }
