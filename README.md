@@ -49,10 +49,15 @@
 
 # How to Install
 
-Run following command:
+On macOS (and Linux), run following command:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ZhongXiLu/dotfiles/master/init.sh)"
 ```
+On Windows, install programs with [winget](https://winget.run/):
+```bash
+winget import --accept-package-agreements --accept-source-agreements winget.json
+```
+
 As per usual, be wary that these are my dotfiles and not everything may be suitable to your liking, so be careful if you plan on running the command above.
 
 # FAQ
