@@ -1,5 +1,5 @@
 {
-    "version": "1.3.0",
+    "version": "1.5.1",
     "addonlistControls": {
         "theme": {
             "view": "list"
@@ -13,5 +13,5 @@
             "customcss": true
         }
     },
-    "emoteVersion": "v1.3.0"
+    "emoteVersion": "v1.5.1"
 }

@@ -53,6 +53,9 @@ compinit
 export EDITOR='nano'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/node@14/lib"
+export CPPFLAGS="-I/usr/local/opt/node@14/include"
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix go)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
