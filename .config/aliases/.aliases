@@ -16,9 +16,9 @@ alias tarc="tar -zcvf"
 alias tarx="tar -xvzf"
 
 alias path='echo -e ${PATH//:/\\n}'
-alias mcid='mvn clean install -DskipTests'
+alias mcid='mvn clean install -DskipTests -Ddependency-check.skip=true'
 alias mci='mvn clean install'
-alias mid='mvn install -DskipTests'
+alias mid='mvn install -DskipTests -Ddependency-check.skip=true'
 
 alias git-rebase='git rebase -i HEAD~2'
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
