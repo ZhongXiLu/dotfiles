@@ -6,6 +6,9 @@ hyper - 3 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 3
 hyper - 4 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 4
 hyper - 5 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 5
 hyper - 6 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 6
+hyper - 7 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 7
+hyper - 8 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 8
+hyper - 9 : source $HOME/.config/yabai/switch_to_space_on_current_display.sh 9
 
 # Focus monitor (toggle)
 hyper - g : yabai -m display --focus recent
@@ -36,3 +39,4 @@ hyper - t : open -a iTerm
 hyper - c : open -na Google\ Chrome
 hyper - i : open -a IntelliJ\ IDEA
 hyper - n : open -a Sublime\ Text
+hyper - m : open -a Slack

@@ -50,7 +50,7 @@ compinit
 #=======
 # Other
 #=======
-export EDITOR='nano'
+export EDITOR='nvim'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"

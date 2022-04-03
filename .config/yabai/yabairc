@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# TODO: Create script that moves window to next available space, if none are available create one + autofocus to it
+# TODO: Add IntelliJ to manage list, but fix all the child windows etc.
+
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
@@ -23,21 +26,25 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  00
-yabai -m config bottom_padding               00
-yabai -m config left_padding                 00
-yabai -m config right_padding                00
-yabai -m config window_gap                   00
+yabai -m config top_padding                  08
+yabai -m config bottom_padding               08
+yabai -m config left_padding                 08
+yabai -m config right_padding                08
+yabai -m config window_gap                   08
 
 # ignore apps
-# yabai -m rule --add app="System Preferences" manage=off
-# yabai -m rule --add app="Mail" manage=off
-# yabai -m rule --add app="Calendar" manage=off
-# yabai -m rule --add app="Microsoft Teams" manage=off
-# yabai -m rule --add app="Slack" manage=off
-# yabai -m rule --add app="Google Chrome" manage=off
-# yabai -m rule --add app="IntelliJ IDEA" manage=off # TODO: fix this
-yabai -m rule --add app=".*" manage=off
+yabai -m rule --add app="System Preferences" manage=off
+yabai -m rule --add app="Mail" manage=off
+yabai -m rule --add app="Calendar" manage=off
+yabai -m rule --add app="Microsoft Teams" manage=off
+yabai -m rule --add app="Finder" manage=off
+yabai -m rule --add app="Slack" manage=off
+yabai -m rule --add app="Discord" manage=off
+yabai -m rule --add app="Docker Desktop" manage=off
+yabai -m rule --add app="Installer" manage=off
+yabai -m rule --add app="Pulse Secure" manage=off
+yabai -m rule --add app="IntelliJ IDEA" manage=off
+# yabai -m rule --add app=".*" manage=off
 
 # Status bar (simple-bar)
 yabai -m config external_bar all:28:0
