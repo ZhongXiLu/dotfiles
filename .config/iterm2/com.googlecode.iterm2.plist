@@ -1912,6 +1912,8 @@ Marks and Annotations.Next Mark</string>
 				<key>Red Component</key>
 				<real>0.058823529630899429</real>
 			</dict>
+			<key>Cursor Type</key>
+			<integer>1</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -2315,6 +2317,8 @@ Marks and Annotations.Next Mark</string>
 	<integer>25</integer>
 	<key>UseBorder</key>
 	<false/>
+	<key>VerticalBarCursorWidth</key>
+	<real>3</real>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
