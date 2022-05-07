@@ -2,7 +2,7 @@
 	"caret_extra_width": 2,
 	"caret_style": "blink",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/SpaceDuck/spaceduck-og.tmTheme",
+	"color_scheme": "Spaceduck.sublime-color-scheme",
 	"font_face": "JetBrainsMono-Regular",
 	"font_options": ["no_liga", "no_clig", "no_calt"],
 	"font_size": 14,

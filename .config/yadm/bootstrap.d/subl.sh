@@ -3,20 +3,19 @@
 set -eu
 
 SYSTEM_TYPE=$(uname -s)
-DOTS_CONFIG_DIR="$HOME/.config/subl/User"
-MACOS_CONFIG_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
-LINUX_CONFIG_DIR="$HOME/.config/sublime-text-3/Packages/User"
-
+DOTS_CONFIG_DIR="$HOME/.config/subl"
+SUBL_CONFIG_DIR=""
 if [ "$SYSTEM_TYPE" = "Darwin" ]; then
-    [[ -d "$MACOS_CONFIG_DIR" ]] && rm -rf "$MACOS_CONFIG_DIR"
-    [ -L "$MACOS_CONFIG_DIR" ] && rm "$MACOS_CONFIG_DIR"
-    ln -s "$DOTS_CONFIG_DIR" "$MACOS_CONFIG_DIR"
-
+    SUBL_CONFIG_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages"
 elif [[ "$SYSTEM_TYPE" = "Linux" ]]; then
-    [[ -d "$LINUX_CONFIG_DIR" ]] && rm -rf "$LINUX_CONFIG_DIR"
-    [ -L "$LINUX_CONFIG_DIR" ] && rm "$LINUX_CONFIG_DIR"
-    ln -s "$DOTS_CONFIG_DIR" "$LINUX_CONFIG_DIR"
+    SUBL_CONFIG_DIR="$HOME/.config/sublime-text-3/Packages"
 fi
-# TODO: windows?
+
+if [ "$SYSTEM_TYPE" = "Darwin" ] || [ "$SYSTEM_TYPE" = "Linux" ]; then
+    [[ -d "$SUBL_CONFIG_DIR/User" ]] && rm -rf "$SUBL_CONFIG_DIR"/User
+    [ -L "$SUBL_CONFIG_DIR/User" ] && rm "$SUBL_CONFIG_DIR/User"
+    cp -r "$DOTS_CONFIG_DIR/SpaceDuck" "$SUBL_CONFIG_DIR/"
+    ln -s "$DOTS_CONFIG_DIR/User" "$SUBL_CONFIG_DIR/User"
+fi
 
 echo "Sublime Text ✅"
