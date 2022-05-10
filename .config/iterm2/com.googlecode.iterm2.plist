@@ -1917,7 +1917,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Advanced</string>
+			<string>Yes</string>
 			<key>Custom Window Title</key>
 			<string></string>
 			<key>Default Bookmark</key>
@@ -2243,7 +2243,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/zhongxilu</string>
+			<string>~/Desktop</string>
 		</dict>
 	</array>
 	<key>OpenBookmark</key>
