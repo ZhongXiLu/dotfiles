@@ -10,7 +10,8 @@ SYSTEM_TYPE=$(uname -s)
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="zhong"
-export UPDATE_ZSH_DAYS=14
+zstyle ':omz:update' mode reminder
+export UPDATE_ZSH_DAYS=30
 DISABLE_MAGIC_FUNCTIONS="true"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8

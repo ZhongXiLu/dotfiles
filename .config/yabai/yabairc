@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 # TODO: Create script that moves window to next available space, if none are available create one + autofocus to it
-# TODO: Add IntelliJ to manage list, but fix all the child windows etc.
 
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
@@ -49,6 +48,7 @@ yabai -m rule --add app="SQLDeveloper" manage=off
 yabai -m rule --add app="MacPass" manage=off
 yabai -m rule --add app="Archive Utility" manage=off
 yabai -m rule --add app="IntelliJ IDEA" manage=off
+yabai -m rule --add app="IntelliJ IDEA" title=".*\[(.*)\].*" manage=on
 # yabai -m rule --add app=".*" manage=off
 
 # Status bar (simple-bar)
