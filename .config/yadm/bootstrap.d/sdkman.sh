@@ -5,7 +5,7 @@ set -e
 DOTS_CONFIG_FILE="$HOME/.config/sdkman/config"
 SDKMAN_CONFIG_FILE="$HOME/.sdkman/etc/config"
 
-declare -a JAVA_VERSIONS=("8" "11" "16")
+declare -a JAVA_VERSIONS=("8" "11" "17")
 
 if [ ! -d "$HOME/.sdkman" ]; then
     curl -s "https://get.sdkman.io?rcupdate=false" | bash
@@ -19,8 +19,8 @@ for JAVA_VERSION in "${JAVA_VERSIONS[@]}"; do
 
     # Check if java version is already installed, if not, install it
     # Does NOT have to be latest version
-    if [[ ! $(sdk list java | grep -E "((local only)|(installed)).*$JAVA_VERSION[^|]*.hs-adpt") ]]; then
-        JAVA_VERSION_IDENTIFIER=$(sdk list java | grep -E "adpt.*$JAVA_VERSION[^|]*.hs-adpt" | tr -s ' ' | rev | cut -d ' ' -f 2 | rev)
+    if [[ ! $(sdk list java | grep -E "((local only)|(installed)).*$JAVA_VERSION[^|]*.zulu") ]]; then
+        JAVA_VERSION_IDENTIFIER=$(sdk list java | grep -E ".* $JAVA_VERSION[^|]*.zulu" | tr -s ' ' | rev | cut -d ' ' -f 2 | rev | head -n1)
         sdk install java $JAVA_VERSION_IDENTIFIER
     fi
 

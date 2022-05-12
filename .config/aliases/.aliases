@@ -42,7 +42,7 @@ verify-exe() {
 }
 
 2java() {
-    JAVA_VERSION=$(sdk list java | grep -E "((local only)|(installed)).*$1[^|]*.hs-adpt" | tr -s ' ' | rev | cut -d ' ' -f 2 | rev)
+    JAVA_VERSION=$(sdk list java | grep -E "((local only)|(installed)).*$1[^|]*.zulu" | tr -s ' ' | rev | cut -d ' ' -f 2 | rev)
     sdk default java $JAVA_VERSION
 }
 
