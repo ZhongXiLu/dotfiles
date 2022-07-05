@@ -66,7 +66,7 @@ export GPG_TTY=$(tty)
 # Bonsai on startup
 #===================
 if [[ $__CFBundleIdentifier != "com.jetbrains.intellij" ]]; then
-    cbonsai -p -L 42
+    cbonsai -p -L 42 -m "$(97things)"
 fi
 
 #=========

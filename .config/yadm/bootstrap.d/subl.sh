@@ -14,7 +14,6 @@ fi
 if [ "$SYSTEM_TYPE" = "Darwin" ] || [ "$SYSTEM_TYPE" = "Linux" ]; then
     [[ -d "$SUBL_CONFIG_DIR/User" ]] && rm -rf "$SUBL_CONFIG_DIR"/User
     [ -L "$SUBL_CONFIG_DIR/User" ] && rm "$SUBL_CONFIG_DIR/User"
-    cp -r "$DOTS_CONFIG_DIR/SpaceDuck" "$SUBL_CONFIG_DIR/"
     ln -s "$DOTS_CONFIG_DIR/User" "$SUBL_CONFIG_DIR/User"
 fi
 

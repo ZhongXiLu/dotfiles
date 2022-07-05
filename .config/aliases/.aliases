@@ -17,7 +17,7 @@ alias tarx="tar -xvzf"
 
 alias path='echo -e ${PATH//:/\\n}'
 alias mcid='mvn clean install -DskipTests -Ddependency-check.skip=true'
-alias mci='mvn clean install'
+alias mci='mvn clean install -Ddependency-check.skip=true'
 alias mid='mvn install -DskipTests -Ddependency-check.skip=true'
 
 alias git-rebase='git rebase -i HEAD~2'
