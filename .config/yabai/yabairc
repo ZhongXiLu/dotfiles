@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-# TODO: Create script that moves window to next available space, if none are available create one + autofocus to it
-
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
@@ -12,7 +10,8 @@ yabai -m config window_placement             second_child
 yabai -m config window_topmost               off
 yabai -m config window_shadow                off
 yabai -m config window_border                on
-yabai -m config window_border_width          4
+yabai -m config window_border_width          2
+yabai -m config window_border_radius         0
 yabai -m config active_window_border_color   0xFF5CCC96
 yabai -m config normal_window_border_color   0xFFECF0C1
 yabai -m config insert_feedback_color        0xFFFF4250
@@ -32,24 +31,10 @@ yabai -m config right_padding                08
 yabai -m config window_gap                   08
 
 # ignore apps
-yabai -m rule --add app="System Preferences" manage=off
-yabai -m rule --add app="Mail" manage=off
-yabai -m rule --add app="Calendar" manage=off
-yabai -m rule --add app="Microsoft Teams" manage=off
-yabai -m rule --add app="Microsoft Outlook" manage=off
-yabai -m rule --add app="Finder" manage=off
-yabai -m rule --add app="Slack" manage=off
-yabai -m rule --add app="Discord" manage=off
-yabai -m rule --add app="Docker Desktop" manage=off
-yabai -m rule --add app="Installer" manage=off
-yabai -m rule --add app="Pulse Secure" manage=off
-yabai -m rule --add app="Preview" manage=off
-yabai -m rule --add app="SQLDeveloper" manage=off
-yabai -m rule --add app="MacPass" manage=off
-yabai -m rule --add app="Archive Utility" manage=off
-yabai -m rule --add app="IntelliJ IDEA" manage=off
-yabai -m rule --add app="IntelliJ IDEA" title=".*\[(.*)\].*" manage=on
-# yabai -m rule --add app=".*" manage=off
+yabai -m rule --add app=".*" manage=off
+# yabai -m rule --add app="iTerm" manage=on
+# yabai -m rule --add app="Sublime Text" manage=on
+# yabai -m rule --add app="Google Chrome" manage=on
 
 # Status bar (simple-bar)
 yabai -m config external_bar all:28:0
