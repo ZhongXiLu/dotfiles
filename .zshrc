@@ -8,6 +8,10 @@ SYSTEM_TYPE=$(uname -s)
 # ZSH
 #=====
 
+autoload -U colors && colors
+autoload -Uz compinit
+compinit
+
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="zhong"
 zstyle ':omz:update' mode reminder
@@ -23,9 +27,6 @@ plugins=(
 [[ -e $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
 [[ -e "$LOCAL_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$LOCAL_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 [[ -e "$LOCAL_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$LOCAL_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-
-autoload -Uz compinit
-compinit
 
 #========
 # iTerm2
@@ -46,7 +47,8 @@ compinit
 # Aliases
 #=========
 [[ -e $HOME/.config/aliases/.aliases ]] && source $HOME/.config/aliases/.aliases
-[[ -e $HOME/.config/aliases/.bosa_aliases ]] && source $HOME/.config/aliases/.bosa_aliases
+[[ -e $HOME/.config/aliases/.dpg_aliases ]] && source $HOME/.config/aliases/.dpg_aliases
+# [[ -e $HOME/.config/aliases/.bosa_aliases ]] && source $HOME/.config/aliases/.bosa_aliases
 
 #=======
 # Other
@@ -55,12 +57,15 @@ export EDITOR='nvim'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/node@14/lib"
-export CPPFLAGS="-I/usr/local/opt/node@14/include"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export LDFLAGS="-L/usr/local/opt/ncurses/lib -L/usr/local/opt/node@14/lib"
+export CPPFLAGS="-I/usr/local/opt/ncurses/include -I/usr/local/opt/node@14/include"
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix go)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export GPG_TTY=$(tty)
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 #===================
 # Bonsai on startup

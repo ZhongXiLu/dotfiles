@@ -1,4 +1,5 @@
 .config/aliases/.bosa_aliases
+.config/aliases/.dpg_aliases
 .m2/settings.xml
 .ssh/id_*
 .ssh/known_hosts

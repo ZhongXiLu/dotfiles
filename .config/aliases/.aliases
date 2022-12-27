@@ -14,11 +14,13 @@ alias diff="colordiff"
 alias vim="nvim"
 alias tarc="tar -zcvf"
 alias tarx="tar -xvzf"
+alias tf="terraform"
 
 alias path='echo -e ${PATH//:/\\n}'
 alias mcid='mvn clean install -DskipTests -Ddependency-check.skip=true'
 alias mci='mvn clean install -Ddependency-check.skip=true'
 alias mid='mvn install -DskipTests -Ddependency-check.skip=true'
+alias python=python3
 
 alias git-rebase='git rebase -i HEAD~2'
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
