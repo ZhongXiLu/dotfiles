@@ -6,7 +6,7 @@ SYSTEM_TYPE=$(uname -s)
 DOTS_CONFIG_DIR="$HOME/.config/subl"
 SUBL_CONFIG_DIR=""
 if [ "$SYSTEM_TYPE" = "Darwin" ]; then
-    SUBL_CONFIG_DIR="$HOME/Library/Application Support/Sublime Text 3/Packages"
+    SUBL_CONFIG_DIR="$HOME/Library/Application Support/Sublime Text/Packages"
 elif [[ "$SYSTEM_TYPE" = "Linux" ]]; then
     SUBL_CONFIG_DIR="$HOME/.config/sublime-text-3/Packages"
 fi
