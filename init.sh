@@ -38,7 +38,7 @@ if [[ "$SYSTEM_TYPE" = "Darwin" || "$SYSTEM_TYPE" = "Linux" ]]; then
     fi
 
     if git config remote.faraway.url > /dev/null; then
-        yadm remote add origin https://github.com/ZhongXiLu/dotfiles.git
+        yadm remote add origin git@github.com:ZhongXiLu/dotfiles.git
     fi
 
 fi
