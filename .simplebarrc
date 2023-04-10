@@ -28,11 +28,14 @@
     "process":
     {
         "displayOnlyCurrent": true,
-        "showCurrentSpaceMode": false
+        "showCurrentSpaceMode": false,
+        "centered": true,
+        "hideWindowTitle": false,
+        "displayOnlyIcon": false
     },
     "spacesDisplay":
     {
-        "exclusions": "Microsoft Teams",
+        "exclusions": "Microsoft Teams, Pop",
         "titleExclusions": "",
         "exclusionsAsRegex": false,
         "displayAllSpacesOnAllScreens": false,
@@ -41,6 +44,7 @@
         "hideEmptySpaces": false,
         "showOptionsOnHover": true,
         "switchSpacesWithoutYabai": false,
+        "spacesExclusions": "",
         "hideSpacesOptions": false
     },
     "widgets":
@@ -58,7 +62,7 @@
         "keyboardWidget": false,
         "spotifyWidget": false,
         "cryptoWidget": false,
-        "stockWidget": true,
+        "stockWidget": false,
         "musicWidget": false,
         "mpdWidget": false,
         "dndWidget": false,
@@ -70,7 +74,7 @@
         "unit": "C",
         "hideLocation": true,
         "hideGradient": false,
-        "customLocation": ""
+        "customLocation": "Kontich"
     },
     "batteryWidgetOptions":
     {
@@ -82,7 +86,8 @@
     {
         "refreshFrequency": 20000,
         "networkDevice": "en0",
-        "toggleWifiOnClick": false
+        "toggleWifiOnClick": false,
+        "hideWifiIfDisabled": false
     },
     "vpnWidgetOptions":
     {

@@ -15,6 +15,7 @@ alias vim="nvim"
 alias tarc="tar -zcvf"
 alias tarx="tar -xvzf"
 alias tf="terraform"
+alias docker="podman"
 
 alias path='echo -e ${PATH//:/\\n}'
 alias mcid='mvn clean install -DskipTests -Ddependency-check.skip=true'

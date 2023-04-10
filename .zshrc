@@ -57,15 +57,12 @@ export EDITOR='nvim'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export LDFLAGS="-L/usr/local/opt/ncurses/lib -L/usr/local/opt/node@14/lib"
 export CPPFLAGS="-I/usr/local/opt/ncurses/include -I/usr/local/opt/node@14/include"
 export GOPATH=$HOME/go
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export GOROOT="$(brew --prefix go)/libexec"
 export GPG_TTY=$(tty)
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 #===================
 # Bonsai on startup
@@ -75,8 +72,6 @@ if [[ $__CFBundleIdentifier != "com.jetbrains.intellij" ]]; then
 fi
 
 #=========
-# SDKMAN!
+# asdf
 #=========
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+. /usr/local/opt/asdf/libexec/asdf.sh

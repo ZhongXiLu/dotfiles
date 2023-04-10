@@ -12,6 +12,7 @@ yabai -m config window_shadow                off
 yabai -m config window_border                on
 yabai -m config window_border_width          2
 yabai -m config window_border_radius         0
+yabai -m config window_border_blur           off
 yabai -m config active_window_border_color   0xFF5CCC96
 yabai -m config normal_window_border_color   0xFFECF0C1
 yabai -m config insert_feedback_color        0xFFFF4250
@@ -23,7 +24,7 @@ yabai -m config mouse_action2                resize
 yabai -m config mouse_drop_action            swap
 
 # general space settings
-yabai -m config layout                       bsp
+yabai -m config layout                       float
 yabai -m config top_padding                  08
 yabai -m config bottom_padding               08
 yabai -m config left_padding                 08
