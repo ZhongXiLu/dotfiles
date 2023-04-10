@@ -36,3 +36,6 @@ find "$BOOTSTRAP_D" -type f | sort | while IFS= read -r bootstrap; do
         fi
     fi
 done
+
+# Install zscaler certificate after everything else is installed
+source "$HOME/.config/yadm/zcli.sh"
