@@ -1,6 +1,7 @@
 .config/aliases/.bosa_aliases
 .config/aliases/.dpg_aliases
 .m2/settings.xml
+.npmrc
 .ssh/id_*
 .ssh/known_hosts
 .gitconfig
