@@ -11,7 +11,6 @@ alias cat='bat --paging=never -p'
 alias h="hstr"
 alias btop="bpytop"
 alias diff="colordiff"
-alias vim="nvim"
 alias tarc="tar -zcvf"
 alias tarx="tar -xvzf"
 alias tf="terraform"
@@ -24,8 +23,6 @@ alias mid='mvn install -DskipTests -Ddependency-check.skip=true'
 alias python=python3
 
 alias git-rebase='git rebase -i HEAD~2'
-alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias aliases="subl $HOME/.config/aliases/.aliases"
 
 alias update='brew update; brew upgrade; brew cleanup'
@@ -39,13 +36,3 @@ alias widgets='cd ~/Library/Application\ Support/Übersicht/widgets'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias localip="ipconfig getifaddr en0"
 alias stats="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl | less"
-
-verify-exe() {
-    xattr -d com.apple.quarantine "$1"
-}
-
-2java() {
-    JAVA_VERSION=$(sdk list java | grep -E "((local only)|(installed)).*$1[^|]*.zulu" | tr -s ' ' | rev | cut -d ' ' -f 2 | rev)
-    sdk default java $JAVA_VERSION
-}
-
