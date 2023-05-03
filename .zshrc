@@ -53,7 +53,7 @@ plugins=(
 #=======
 # Other
 #=======
-export EDITOR='nvim'
+export EDITOR='vim'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
