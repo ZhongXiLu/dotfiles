@@ -55,6 +55,7 @@ plugins=(
 #=======
 export EDITOR='vim'
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/ncurses/lib -L/usr/local/opt/node@14/lib"
