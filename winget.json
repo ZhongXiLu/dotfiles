@@ -1,6 +1,6 @@
 {
     "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-    "CreationDate": "2021-12-15T21:01:31.134-00:00",
+    "CreationDate": "2023-07-07T16:39:13.015-00:00",
     "Sources":
     [
         {
@@ -28,10 +28,16 @@
                     "PackageIdentifier": "Google.Chrome"
                 },
                 {
+                    "PackageIdentifier": "JetBrains.IntelliJIDEA.Community"
+                },
+                {
                     "PackageIdentifier": "Microsoft.Office"
                 },
                 {
                     "PackageIdentifier": "Microsoft.OneDrive"
+                },
+                {
+                    "PackageIdentifier": "PathofBuildingCommunity.PathofBuildingCommunity"
                 },
                 {
                     "PackageIdentifier": "Postman.Postman"
@@ -46,9 +52,6 @@
                     "PackageIdentifier": "EpicGames.EpicGamesLauncher"
                 },
                 {
-                    "PackageIdentifier": "ElectronicArts.Origin"
-                },
-                {
                     "PackageIdentifier": "SteelSeries.GG"
                 },
                 {
@@ -58,16 +61,13 @@
                     "PackageIdentifier": "VideoLAN.VLC"
                 },
                 {
+                    "PackageIdentifier": "Wacom.WacomTabletDriver"
+                },
+                {
+                    "PackageIdentifier": "OpenJS.NodeJS.LTS"
+                },
+                {
                     "PackageIdentifier": "NZXT.CAM"
-                },
-                {
-                    "PackageIdentifier": "SlackTechnologies.Slack"
-                },
-                {
-                    "PackageIdentifier": "Oracle.VirtualBox"
-                },
-                {
-                    "PackageIdentifier": "Typora.Typora"
                 },
                 {
                     "PackageIdentifier": "SublimeHQ.SublimeText"
@@ -83,16 +83,19 @@
                 },
                 {
                     "PackageIdentifier": "Blizzard.BattleNet"
+                },
+                {
+                    "PackageIdentifier": "Nvidia.GeForceExperience"
                 }
             ],
-            "SourceDetails":
+            "SourceDetails": 
             {
-                "Argument": "https://winget.azureedge.net/cache",
+                "Argument": "https://cdn.winget.microsoft.com/cache",
                 "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
                 "Name": "winget",
                 "Type": "Microsoft.PreIndexed.Package"
             }
         }
     ],
-    "WinGetVersion": "1.1.13405"
+    "WinGetVersion": "1.4.11071"
 }
