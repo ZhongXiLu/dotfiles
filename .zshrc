@@ -1,8 +1,8 @@
 
 
-SYSTEM_TYPE=$(uname -s)
-[[ "$SYSTEM_TYPE" = "Darwin" ]] && LOCAL_DIR="/usr/local"
-[[ "$SYSTEM_TYPE" = "Linux" ]] && LOCAL_DIR="/home/linuxbrew/.linuxbrew"
+ARCHITECTURE=$(uname -m)
+[[ "$ARCHITECTURE" = "x86_64" ]] && LOCAL_DIR="/usr/local"
+[[ "$ARCHITECTURE" = "arm64" ]] && LOCAL_DIR="/opt/homebrew"
 
 #=====
 # ZSH
@@ -69,10 +69,10 @@ export GPG_TTY=$(tty)
 # Bonsai on startup
 #===================
 if [[ $__CFBundleIdentifier != "com.jetbrains.intellij" ]]; then
-    cbonsai -p -L 42 -m "$(97things)"
+    cbonsai -p -L 42
 fi
 
 #=========
 # asdf
 #=========
-. /usr/local/opt/asdf/libexec/asdf.sh
+. $LOCAL_DIR/opt/asdf/libexec/asdf.sh

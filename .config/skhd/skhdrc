@@ -25,8 +25,8 @@ hyper - 0 : yabai -m window --grid 1:1:0:0:1:1
 # Move window
 hyper - e : yabai -m window --display 1; yabai -m display --focus 1
 hyper - d : yabai -m window --display 2; yabai -m display --focus 2
-hyper - f : yabai -m window --space next; skhd --key "ctrl - $(( $(yabai -m query --spaces --space | jq '.index') + 1 ))"
-hyper - s : yabai -m window --space prev; skhd --key "ctrl - $(( $(yabai -m query --spaces --space | jq '.index') - 1 ))"
+hyper - f : yabai -m window --space next; yabai -m space --focus next
+hyper - s : yabai -m window --space prev; yabai -m space --focus prev
 hyper - v : source $HOME/.config/yabai/move_window_to_free_space.sh
 
 # Close current window
