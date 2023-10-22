@@ -75,4 +75,4 @@ fi
 #=========
 # asdf
 #=========
-. $LOCAL_DIR/opt/asdf/libexec/asdf.sh
+. "$LOCAL_DIR/opt/asdf/libexec/asdf.sh"
