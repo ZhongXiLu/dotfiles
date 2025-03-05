@@ -4,10 +4,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cdd='cd ~/Desktop/'
-alias ll='exa -lF --color-scale --no-user --no-time --no-permissions --group-directories-first -a'
-alias ls='exa -F --group-directories-first -a'
+alias ll='eza -lF --color-scale --no-user --no-time --no-permissions --group-directories-first -a'
+alias ls='eza -F --group-directories-first -a'
 alias tree='tree -C'
-alias cat='bat --paging=never -p'
+#alias cat='bat --paging=never -p'
 alias h="hstr"
 alias btop="bpytop"
 alias diff="colordiff"
@@ -26,6 +26,7 @@ alias git-rebase='git rebase -i HEAD~2'
 alias aliases="subl $HOME/.config/aliases/.aliases"
 
 alias update='brew update; brew upgrade; brew cleanup'
+alias npm_upgrade='npx npm-check-updates -u --target semver'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"

@@ -58,6 +58,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/node@14/bin:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export LDFLAGS="-L/usr/local/opt/ncurses/lib -L/usr/local/opt/node@14/lib"
 export CPPFLAGS="-I/usr/local/opt/ncurses/include -I/usr/local/opt/node@14/include"
 export GOPATH=$HOME/go
@@ -71,8 +72,3 @@ export GPG_TTY=$(tty)
 if [[ $__CFBundleIdentifier != "com.jetbrains.intellij" ]]; then
     cbonsai -p -L 42
 fi
-
-#=========
-# asdf
-#=========
-. "$LOCAL_DIR/opt/asdf/libexec/asdf.sh"
